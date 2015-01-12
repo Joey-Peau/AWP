@@ -1,9 +1,6 @@
 <div id="accordion">
 <?php
-$host = 'mysql.metropolia.fi';
-$dbname = 'joeyp';
-$user = 'joeyp';
-$pass = 'Joy1788150c';
+include "../../config.php";
 
 try {
 	$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);

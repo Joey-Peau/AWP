@@ -1,8 +1,5 @@
 <?php
-$host = 'mysql.metropolia.fi';
-$dbname = 'joeyp';
-$user = 'joeyp';
-$pass = 'Joy1788150c';
+include "../../config.php";
 
 // TODO: get the data from the form by using $_POST
 // this is how you convert the date from the form to SQL formatted date:
