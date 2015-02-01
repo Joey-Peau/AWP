@@ -1,13 +1,14 @@
-﻿@mixin background-image($color1,$color2) {
+﻿//HELLO !!
+@mixin background-image($color1,$color2) {
   background-image: -webkit-linear-gradient(bottom, $color1 24%, $color2 86%);
   background-image: -moz-linear-gradient(bottom, $color1 24%, $color2 86%);
   background-image: linear-gradient(bottom, $color1 24%, $color2 86%);
 }
 
 @mixin border-radius($px){
-        border-radius: $px;
-        -moz-border-radius: $px;
-        -webkit-border-radius: $px;
+  border-radius: $px;
+  -moz-border-radius: $px;
+  -webkit-border-radius: $px;
 }
 
 html{
@@ -28,7 +29,7 @@ header,
 article,
 footer {
   background-color: #eeeeee;
-        @include border-radius(8px);
+  @include border-radius(8px);
   width: 640px;
   border: 1px solid #000000;
   margin-bottom: 4px;
@@ -83,7 +84,7 @@ article{
   line-height: 140%;
 
   img{
-        @include border-radius(4px);
+    @include border-radius(4px);
     float: right;
     border: 2px solid #000;
     margin-left: 8px;

@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Week 4</title>
+  		{{ "assets/css/foundation.css" | asset_url | stylesheet_tag }}
+		{{ "assets/css/app.css" | asset_url | stylesheet_tag }}
+		{{ "//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.css" | stylesheet_tag }}
+		<script src="{{ "modernizr.js" | asset_url }}"></script>
+	</head>
+	<body>
+		{% include 'menu' %}
+		<!-- TODO: Add 'menu.liquid' to 'includes' folder. Make the foundation top-bar there. Include 'menu.liquid' here. -->
+		{% block content %}{% endblock %}
+  		{% include "scripts" %}
+	</body>
+</html>
+
