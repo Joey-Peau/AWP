@@ -34,7 +34,7 @@
 		<!-- TODO: Add 'menu.liquid' to 'includes' folder. Make the foundation top-bar there. Include 'menu.liquid' here. -->
 		
 <div class="row">
-	<div id="slider" class="range-slider radius" data-slider data-options="step:1;start:10; end:40;">
+	<div id="slider" class="range-slider radius" data-slider data-options="step:0.001;start:0; end:100;">
 	<span class="range-slider-handle" role="slider" tabindex="0"></span>
 		<span class="range-slider-active-segment"></span>
 		<input id="slider" type="hidden">
@@ -58,7 +58,7 @@ $(document).foundation({
       var max = defaut[2].split(":")[1];
       var defaut = (max - min +1)/2;
       var nb = $('#slider').attr('data-slider');
-      $("#image").attr("width", 1000*nb/defaut);
+      $("#image").attr("width", (100*nb/defaut) + "%");
   }
 }
 });

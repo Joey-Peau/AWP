@@ -12,7 +12,7 @@ $(document).foundation({
       var max = defaut[2].split(":")[1];
       var defaut = (max - min +1)/2;
       var nb = $('#slider').attr('data-slider');
-      $("#image").attr("width", 1000*nb/defaut);
+      $("#image").attr("width", (100*nb/defaut) + "%");
   }
 }
 });
