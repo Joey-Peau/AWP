@@ -4,10 +4,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Week 4</title>
-  		<link href="/assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" media="all" />
+  		<link href="assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.css" rel="stylesheet" type="text/css" media="all" />
-		<script src="/bower_components/modernizr/modernizr.js"></script>
+		<script src="bower_components/modernizr/modernizr.js"></script>
 	</head>
 	<body>
 		<nav class="top-bar" data-topbar>
@@ -15,7 +15,7 @@
 		<li class="name">
 
 			<!-- TODO: Make the 'home' page the top part is similar to 'Workspace' template: http://foundation.zurb.com/templates.html -->
-			<h1><a href="">Week 4</a></h1>
+			<h1><a href="index.html">Week 4</a></h1>
 		</li>
 		<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
 	</ul>
@@ -23,10 +23,10 @@
 	<section class="top-bar-section">
 
 		<ul class="right">
-			<li><a href="index">Home</a></li>
-			<li><a href="orbit">Orbit</a></li>
-			<li><a href="galery">Gallery</a></li>
-			<li><a href="slider">Slider</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="orbit.html">Orbit</a></li>
+			<li><a href="galery.html">Gallery</a></li>
+			<li><a href="slider.html">Slider</a></li>
 		</ul>
 	</section>
 </nav>
@@ -62,8 +62,8 @@
 	</li>
 </ul>
 
-  		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/assets/js/foundation.min.js"></script>
+  		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/foundation.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.min.js"></script>
 <script>
 // TODO: Set up Range Slider's on_change to resize the image. See 'Callback Function' here: http://foundation.zurb.com/docs/components/range_slider.html
@@ -72,8 +72,7 @@ $(document).foundation({
 		on_change: function(){
       // do something when the value changes
       var nb = $('#slider').attr('data-slider');
-      var text = "http://placehold.it/"+1000*nb/25+"x"+400*nb/25+"&text=Slide Image";
-      $("#image").attr("src", text);
+      $("#image").attr("width", 1000*nb/25);
   }
 }
 });
