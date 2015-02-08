@@ -1,0 +1,44 @@
+body{
+	background-image: url("../../assets/img/background.jpg");
+}
+
+
+.page-header *{
+	background-color: transparent;
+	color: white;
+	font-weight:  bold;
+	font-size: 50px;
+}
+
+.page-header h1, #question{
+	font-family:"Arial Black, sans-recif";
+	font-style: italic;
+}
+
+#text *{
+	padding: 5%;
+}
+
+img{
+	width: 100%;
+}
+
+
+.stuff{
+	background-color: #399FA8;
+	color: white;
+	padding: 1%;
+}
+
+.page-footer *{
+	font-size: 25px;
+	color: white;
+}
+
+h2{
+	color: #C59636;
+}
+
+h4{
+	color: #399FA8;
+}

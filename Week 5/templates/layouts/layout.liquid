@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Layout{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ "bootstrap.css" | asset_url | stylesheet_tag }}
+    {{ "ownstyle.css" | asset_url | stylesheet_tag }}
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    {{ "bootstrap.js" | asset_url | script_tag }}
+</body>
+</html>
