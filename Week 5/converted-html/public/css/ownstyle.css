@@ -10,7 +10,7 @@ body{
 	font-size: 50px;
 }
 
-.page-header h1, .stuff{
+.page-header h1, #question{
 	font-family:"Arial Black, sans-recif";
 	font-style: italic;
 }
@@ -23,17 +23,22 @@ img{
 	width: 100%;
 }
 
-#blue{
-	margin: 2%;
-}
 
 .stuff{
 	background-color: #399FA8;
 	color: white;
-	padding: 2%;
+	padding: 1%;
 }
 
 .page-footer *{
 	font-size: 25px;
 	color: white;
+}
+
+h2{
+	color: #C59636;
+}
+
+h4{
+	color: #399FA8;
 }
