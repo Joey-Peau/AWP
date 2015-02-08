@@ -7,8 +7,12 @@ $(document).foundation({
 	slider: {
 		on_change: function(){
       // do something when the value changes
+      var defaut = $('#slider').attr('data-options').split(";");
+      var min = defaut[1].split(":")[1];
+      var max = defaut[2].split(":")[1];
+      var defaut = (max - min +1)/2;
       var nb = $('#slider').attr('data-slider');
-      $("#image").attr("width", 1000*nb/25);
+      $("#image").attr("width", (100*nb/defaut) + "%");
   }
 }
 });
